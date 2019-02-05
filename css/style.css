@@ -1,0 +1,12 @@
+@font-face { font-family: ProductSans; src: url('../res/productsans.ttf'); }
+html, body{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  font-family: ProductSans;
+}
+.mainForm{
+  padding: 10px;
+}

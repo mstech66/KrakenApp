@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Demo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row" style="background-color:#212121;color:#fafafa;height:150px;display:flex;align-items:center;">
+        <div class="col-sm-12" style="text-align:center;padding-top:2px;vertical-align:middle;line-height:150px;">
+          <h1>Kraken</h1>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper container">
+      <form class="form-default mainForm" action="index.html" method="post">
+        <div class="form-group">
+          <label for="seq">Enter the Database Name:</label>
+          <input type="text" id="seq" class="form-control" placeholder="minikraken">
+        </div>
+        <div class="custom-file">
+          <input type="file" id="exportFile" class="custom-file-input" webkitdirectory directory/>
+          <label for="exportFile" class="custom-file-label" id="exportLabel">Select the directory where database is...</label>
+        </div>
+        <br><br>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="myFile" name="filename2">
+          <label for="myFile" class="custom-file-label" id="myLabel">Select the sequences.fa file...</label>
+        </div>
+        <br><br>
+        <button id="btn" class="btn btn-default">kraken-db</button>
+        <button id="translate" class="btn btn-default">kraken-translate</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+        require('./renderer.js')
+    </script>
+  </body>
+</html>

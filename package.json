@@ -1,0 +1,22 @@
+{
+  "name": "krakenapp",
+  "version": "1.0.0",
+  "description": "Kraken Taxonomic Sequence Classification System GUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-linux": "electron-packager . krakenapp --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "deb64": "electron-installer-debian --src release-builds/krakenapp-linux-x64/ --dest release-build/installers/ --arch amd64"
+  },
+  "keywords": [
+    "kraken"
+  ],
+  "author": "Manthan Mevada (https://github.com/mstech66)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-installer-debian": "^1.1.0",
+    "electron-packager": "^13.0.1"
+  }
+}
